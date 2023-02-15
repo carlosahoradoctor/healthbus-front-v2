@@ -1,15 +1,15 @@
-import React, { Fragment, useContext, useEffect } from 'react';
+import React, { Fragment, useContext } from 'react';
 import { H6, Image, UL, LI } from '../../../AbstractElements';
-import ConfigDB from '../../../Config/ThemeConfig';
+// import ConfigDB from '../../../Config/ThemeConfig';
 import CustomizerContext from '../../../_helper/Customizer';
 
 const CheckLayout = () => {
     const { addSidebarSettings } = useContext(CustomizerContext);
-    const sidebarSettings = ConfigDB.data.sidebar_setting || localStorage.getItem('sidebar_Settings');
+    // const sidebarSettings = ConfigDB.data.sidebar_setting || localStorage.getItem('sidebar_Settings');
 
-    useEffect(() => {
-        ConfigDB.data.settings.sidebar_setting = sidebarSettings;
-    }, []);
+    // useEffect(() => {
+    //     ConfigDB.data.settings.sidebar_setting = sidebarSettings;
+    // }, []);
 
     const handleSttings = (sidebar_Settings) => {
         addSidebarSettings(sidebar_Settings);

@@ -1,7 +1,7 @@
 import React, { Fragment, useEffect, useState } from 'react';
 import { Settings } from 'react-feather';
 import { Link } from 'react-router-dom';
-import { H6, Image, LI, UL, P } from '../../AbstractElements';
+import { H6, Image, P } from '../../AbstractElements';
 import man from '../../assets/images/dashboard/1.png';
 
 const Profile = () => {
